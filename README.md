@@ -1,28 +1,45 @@
 # Advanced HTML5 Elements and Forms
 
-## Objectives
-Implement HTML5 images, lists, tables, forms and input types.
-Use form validation attributes.
-Apply multimedia elements such as audio and video.
+## Overview
+This project demonstrates the implementation of advanced HTML5 elements, including images, lists, tables, and forms. It also showcases form validation attributes and multimedia integration.
 
-## Instructions
+## Features
+### ✅ Ordered List with Roman Numerals
+- An ordered list using Roman numerals.
 
-- Create an index.html file.
-- Add an ordered list with roman numerals
-- Add an external image from pexels.com
-- Add a table of 5 contacts with; name, address, mobile and emails
-- Add a registration form
+### ✅ External Image
+- Integrated an external image from [Pexels](https://www.pexels.com/).
 
->[!NOTE]
->  The registration form should have:
->- Name, email, password, and date fields.
->- A dropdown, radio buttons, and checkboxes.
->- Proper labels and placeholders.
->- Required fields and validation attributes.
->- Ensure proper indentation and commenting.
- 
-# Tasks
-- Create a well-structured HTML5 document.
-- Ensure semantic correctness.
+### ✅ Contact Table
+- A structured table displaying 5 contacts with:
+  - **Name**
+  - **Address**
+  - **Mobile Number**
+  - **Email**
 
-Happy Coding! 💻✨
+### ✅ Registration Form
+- Fields included:
+  - Full Name
+  - Email (with validation)
+  - Password (with minimum length)
+  - Date of Birth
+  - Country (Dropdown)
+  - Gender (Radio Buttons)
+  - Interests (Checkboxes)
+- **Validation Attributes Used:**
+  - `required`, `placeholder`, `minlength`, `type`, and `pattern`
+- **Styling & Layout:**
+  - Centered form inside a **Bootstrap-styled card**
+  - **80% width**
+  - **Modern UI styling**
+  - Responsive and accessible design
+
+## Technologies Used
+- **HTML5** for structured content
+- **CSS3 & Bootstrap** for styling and layout
+- **Git** for version control
+
+## How to Run
+1. Clone the repository:  
+   ```sh
+   git clone <repo-url>
