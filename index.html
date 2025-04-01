@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Background Image */
+        body {
+            background: url('https://images.pexels.com/photos/414171/pexels-photo-414171.jpeg') no-repeat center center fixed;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        /* Form Container */
+        .form-card {
+            background: rgba(255, 255, 255, 0.9); /* Transparent white background */
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            width: 80%;
+            max-width: 600px;
+        }
+
+        h2 {
+            color: #333;
+            text-align: center;
+        }
+
+        label {
+            color: #353333;
+        }
+
+        input, select {
+            background: #f1f1f1;
+            color: black;
+        }
+
+        input:focus, select:focus {
+            background: #e0e0e0;
+        }
+
+        /* Register Button Styling */
+        .register-btn {
+            background: #8a2be2; /* Violet */
+            color: white;
+            width: 20%;
+            margin: 0 auto;
+            display: block;
+            text-align: center;
+        }
+
+        .register-btn:hover {
+            background: #6b1cb8; /* Darker Violet */
+        }
+    </style>
+</head>
+<body>
+    <div class="container d-flex justify-content-center align-items-center">
+        <div class="form-card">
+            <h2>Registration Form</h2>
+            <form>
+                <div class="mb-3">
+                    <label for="name" class="form-label">Full Name *</label>
+                    <input type="text" id="name" class="form-control" placeholder="Enter your full name" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email *</label>
+                    <input type="email" id="email" class="form-control" placeholder="Enter your email" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="password" class="form-label">Password *</label>
+                    <input type="password" id="password" class="form-control" placeholder="Enter your password" minlength="8" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="birthdate" class="form-label">Date of Birth *</label>
+                    <input type="date" id="birthdate" class="form-control" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="country" class="form-label">Country</label>
+                    <select id="country" class="form-select">
+                        <option value="">Select a country</option>
+                        <option value="us">United States</option>
+                        <option value="uk">United Kingdom</option>
+                        <option value="KEN">Kenya</option>
+                        <option value="NGR">Nigeria</option>
+                        <option value="UG">Uganda</option>
+                        <option value="TZ">Tanzania</option>
+                    </select>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Gender</label>
+                    <div class="form-check">
+                        <input type="radio" id="male" name="gender" value="male" class="form-check-input">
+                        <label for="male" class="form-check-label">Male</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" id="female" name="gender" value="female" class="form-check-input">
+                        <label for="female" class="form-check-label">Female</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" id="other" name="gender" value="other" class="form-check-input">
+                        <label for="other" class="form-check-label">Other</label>
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Interests</label>
+                    <div class="form-check">
+                        <input type="checkbox" id="coding" name="interests" value="coding" class="form-check-input">
+                        <label for="coding" class="form-check-label">Coding</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" id="design" name="interests" value="design" class="form-check-input">
+                        <label for="design" class="form-check-label">Design</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" id="music" name="interests" value="music" class="form-check-input">
+                        <label for="music" class="form-check-label">Music</label>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn register-btn">Register</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
